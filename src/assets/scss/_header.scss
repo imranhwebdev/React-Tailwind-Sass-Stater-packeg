@@ -1,0 +1,69 @@
+@keyframes headerAnimation {
+    0% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.logo {
+    cursor: pointer;
+}
+
+.heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color: transparent;
+    padding: var(--navbar-padding-y) 0;
+    --navbar-padding-y: 30px;
+
+    @include md {
+        --navbar-padding-y: 24px;
+    }
+
+    @include sm {
+        --navbar-padding-y: 20px;
+    }
+
+    &.position-fixed {
+        position: fixed;
+        animation: headerAnimation .5s linear;
+        backdrop-filter: blur(3px);
+        --navbar-padding-y: 0px;
+
+        @include md {
+            --navbar-padding-y: 0px;
+        }
+
+        @include sm {
+            --navbar-padding-y: 0;
+        }
+    }
+
+  
+
+
+
+    &-toggler {
+        --btn-padding-x: 4px;
+        --btn-padding-y: 5px;
+        padding: var(--btn-padding-y) var(--btn-padding-x);
+        border: none;
+        background-color: transparent;
+        color: $heading;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 10px;
+
+        & svg {
+            width: 40px;
+            height: 40px;
+        }
+    }
+}

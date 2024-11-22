@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.cdnfonts.com/css/draxel');
+@font-face {
+    font-family: "ComicSansMS3";
+    src: url('/src/assets/fonts/ComicSansMS3.ttf');
+}
+$font-1: 'ComicSansMS3', sans-serif;
+$font-2: 'Draxel', sans-serif;
+$font-3: "Inter", sans-serif;
+$white: #fff;
+$black: #000;
+$primary: #FF3030;
+$secondary: #6DDDFF;
+$text: #C0C3C5;
+$heading: $white;
+$border: #4B4B4B;
+$bg: #000033;
+$second-bg: #F8DA12;
+
+:root {
+    scroll-behavior: auto !important;
+}
